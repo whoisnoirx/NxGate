@@ -1,0 +1,77 @@
+# NxGate Language — 한국어 (ko_KR)
+# Author: whois_noirx
+
+prefix: "<gradient:#c471ed:#12c2e9><bold>NxGate</bold></gradient><#8a9bb2> » </color>"
+
+no-permission: "<#ff4757>이 명령을 실행할 권한이 없습니다."
+player-only: "<#ff4757>이 명령은 플레이어만 실행할 수 있습니다."
+unknown-portal: "<#ff4757>알 수 없는 포털: <#ffe27a>%portal%<#ff4757>. 유효한 값: nether, end, gateway."
+unknown-command: "<#ff4757>알 수 없는 서브커맨드입니다. <#ffe27a>/nxgate help<#ff4757>를 사용하세요."
+plugin-reloaded: "<#38ef7d>✔ NxGate가 성공적으로 다시 로드되었습니다."
+
+portal-opened: "<#38ef7d>✔ <white>포털 <gradient:#38ef7d:#11998e>%portal%</gradient>이(가) <#38ef7d>열렸습니다</color>."
+portal-already-open: "<#ffe27a>⚠ 포털 <#38ef7d>%portal%<#ffe27a>은(는) 이미 열려 있습니다."
+portal-open-timed: "<#38ef7d>✔ <white>포털 <gradient:#38ef7d:#11998e>%portal%</gradient>이(가) <#ffd200><bold>%time%</bold><white> 동안 열렸습니다."
+
+portal-closed: "<#ff4e50>✖ <white>포털 <gradient:#ff4e50:#fc466b>%portal%</gradient>이(가) <#ff4e50>닫혔습니다</color>."
+portal-closed-reason: "<#ff4e50>✖ <white>포털 <gradient:#ff4e50:#fc466b>%portal%</gradient>이(가) 닫혔습니다.\n<#8a9bb2>이유: <#ffe27a>%reason%"
+portal-already-closed: "<#ffe27a>⚠ 포털 <#ff4e50>%portal%<#ffe27a>은(는) 이미 닫혀 있습니다."
+
+portal-access-denied: "<#ff4e50>✖ 포털 <#ffe27a>%portal%<#ff4e50>은(는) 현재 닫혀 있습니다."
+portal-access-denied-reason: "<#ff4e50>✖ 포털 <#ffe27a>%portal%<#ff4e50>은(는) 현재 닫혀 있습니다.\n<#8a9bb2>이유: <#ffe27a>%reason%"
+
+player-removed: "<#ffe27a>⚑ 포털 <#38ef7d>%portal%<#ffe27a>이(가) 닫혀 텔레포트되었습니다."
+player-kicked: "<#ff4e50>포털 <#ffe27a>%portal%<#ff4e50>이(가) 닫혀 퇴장되었습니다."
+
+timer-extended: "<#38ef7d>✔ <white>포털 <gradient:#38ef7d:#11998e>%portal%</gradient>의 타이머가 <#ffd200><bold>%time%</bold><white> 연장되었습니다. 남은 총 시간: <#12c2e9><bold>%total%</bold><white>."
+timer-not-running: "<#ffe27a>⚠ 포털 <#12c2e9>%portal%<#ffe27a>에 활성 타이머가 없습니다. <#12c2e9>/nxgate open %portal% <시간><#ffe27a>을 사용하세요."
+timer-portal-closed: "<#ff4e50>✖ 포털 <#ffe27a>%portal%<#ff4e50>이 닫혀 있습니다. 먼저 열어 주세요."
+
+bossbar-text: "%icon% <gradient:#c471ed:#12c2e9>%portal%</gradient> <#8a9bb2>▸ </color><#ffd200><bold>%time%</bold> <#8a9bb2>후 닫힘"
+
+status-header: "<gradient:#f7971e:#ffd200>⧫ NxGate 상태 ⧫</gradient>"
+status-portal: "  <#d1d8e0>%portal% <#8a9bb2>→</color> %status%"
+status-open: "<#38ef7d><bold>● 열림</bold>"
+status-closed: "<#ff4e50><bold>● 닫힘</bold>"
+status-timed: "<#38ef7d><bold>● 열림</bold> <#8a9bb2>(<#ffd200>%time%<#8a9bb2> 남음)"
+status-footer: "<#2d3436>────────────────────────"
+
+next-header: "<gradient:#f7971e:#ffd200>⧫ 다음 개방 ⧫</gradient>"
+next-schedule: "  <#d1d8e0>%portal% <#8a9bb2>→</color> <#12c2e9>%day% <#c471ed>%time%"
+next-remaining: "  <#8a9bb2><#ffe27a>%remaining%<#8a9bb2> 후"
+next-no-schedule: "<#ffe27a>⚠ 포털 <#12c2e9>%portal%<#ffe27a>에 대한 일정을 찾을 수 없습니다."
+next-currently-open: "<#38ef7d>✔ 포털 <#12c2e9>%portal%<#38ef7d>은(는) 현재 열려 있습니다."
+
+schedule-set: "<#38ef7d>✔ 포털 <#12c2e9>%portal%<#38ef7d>의 일정이 설정되었습니다."
+schedule-removed: "<#ffe27a>포털 <#12c2e9>%portal%<#ffe27a>의 일정이 삭제되었습니다."
+schedule-no-schedule: "<#ffe27a>⚠ 포털 <#12c2e9>%portal%<#ffe27a>에 대한 일정이 없습니다."
+schedule-list-header: "<gradient:#f7971e:#ffd200>⧫ 일정 목록 ⧫</gradient>"
+schedule-list-entry: "  <#12c2e9>%portal% <#8a9bb2>│ <#d1d8e0>%days% <#8a9bb2>│ <#ffe27a>%open%<#8a9bb2>→<#ffe27a>%close%"
+schedule-list-empty: "  <#8a9bb2>설정된 일정이 없습니다."
+
+broadcast-open: "<gradient:#38ef7d:#11998e>⬡ %portal%</gradient> <white>포털이 <#38ef7d><bold>열렸습니다</bold><white>!"
+broadcast-open-subtitle: "<#8a9bb2>이제 포털을 통과할 수 있습니다."
+broadcast-close: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>포털이 <#ff4e50><bold>닫혔습니다</bold><white>."
+broadcast-close-reason: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>포털이 <#ff4e50><bold>닫혔습니다</bold><white>. <#8a9bb2>[<#ffe27a>%reason%<#8a9bb2>]"
+broadcast-close-subtitle: "<#8a9bb2>접근이 제한되었습니다."
+
+help-header: "<gradient:#f7971e:#ffd200>⧫ NxGate 도움말 ⧫</gradient>"
+help-open: "  <#12c2e9>/nxgate open <portal> [시간] <#8a9bb2>— 포털 열기"
+help-close: "  <#12c2e9>/nxgate close <portal> [이유] <#8a9bb2>— 포털 닫기"
+help-status: "  <#12c2e9>/nxgate status [portal] <#8a9bb2>— 상태 확인"
+help-next: "  <#12c2e9>/nxgate next <portal> <#8a9bb2>— 다음 개방 시간"
+help-schedule-list: "  <#12c2e9>/nxgate schedule list <#8a9bb2>— 일정 목록"
+help-schedule-set: "  <#12c2e9>/nxgate schedule set <portal> <요일> <열기> <닫기> <#8a9bb2>— 주간 일정 설정"
+help-schedule-remove: "  <#12c2e9>/nxgate schedule remove <portal> <#8a9bb2>— 일정 삭제"
+help-timer-extend: "  <#12c2e9>/nxgate timer extend <portal> <시간> <#8a9bb2>— 카운트다운 연장"
+help-reload: "  <#12c2e9>/nxgate reload <#8a9bb2>— 설정 다시 로드"
+help-footer: "<#2d3436>────────────────────────"
+
+time-days: "%d일"
+time-hours: "%d시간"
+time-minutes: "%d분"
+time-seconds: "%d초"
+time-day: "%d일"
+time-hour: "%d시간"
+time-minute: "%d분"
+time-second: "%d초"

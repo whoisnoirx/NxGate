@@ -1,0 +1,49 @@
+name: NxGate
+version: '${project.version}'
+main: com.noirx.nxgate.NxGate
+api-version: '1.16'
+description: Advanced portal & dimension control — by whoisnoirx
+authors: [ whoisnoirx ]
+website: https://modrinth.com/plugin/nxgate
+softdepend: [ PlaceholderAPI, Essentials, EssentialsX ]
+
+permissions:
+  nxgate.admin:
+    description: Full admin access to NxGate
+    default: op
+    children:
+      nxgate.open: true
+      nxgate.close: true
+      nxgate.reload: true
+      nxgate.schedule: true
+      nxgate.bypass: true
+      nxgate.status: true
+      nxgate.timer: true
+  nxgate.open:
+    description: Open portals
+    default: op
+  nxgate.close:
+    description: Close portals
+    default: op
+  nxgate.reload:
+    description: Reload plugin config and language
+    default: op
+  nxgate.schedule:
+    description: Manage portal schedules
+    default: op
+  nxgate.bypass:
+    description: Bypass closed portals
+    default: op
+  nxgate.status:
+    description: View portal status
+    default: true
+  nxgate.timer:
+    description: Extend active portal countdown timers
+    default: op
+
+commands:
+  nxgate:
+    description: NxGate portal control
+    usage: /nxgate <subcommand>
+    permission: nxgate.admin
+    aliases: [ nxg, gate ]

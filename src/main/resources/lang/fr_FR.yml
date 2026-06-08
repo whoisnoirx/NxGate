@@ -1,0 +1,77 @@
+# NxGate Language — Français (fr_FR)
+# Author: whois_noirx
+
+prefix: "<gradient:#c471ed:#12c2e9><bold>NxGate</bold></gradient><#8a9bb2> » </color>"
+
+no-permission: "<#ff4757>Vous n'avez pas la permission d'effectuer cette action."
+player-only: "<#ff4757>Cette commande ne peut être exécutée que par un joueur."
+unknown-portal: "<#ff4757>Portail inconnu: <#ffe27a>%portal%<#ff4757>. Portails valides: nether, end, gateway."
+unknown-command: "<#ff4757>Sous-commande inconnue. Utilisez <#ffe27a>/nxgate help<#ff4757>."
+plugin-reloaded: "<#38ef7d>✔ NxGate a été rechargé avec succès."
+
+portal-opened: "<#38ef7d>✔ <white>Le portail <gradient:#38ef7d:#11998e>%portal%</gradient> a été <#38ef7d>ouvert</color>."
+portal-already-open: "<#ffe27a>⚠ Le portail <#38ef7d>%portal%<#ffe27a> est déjà ouvert."
+portal-open-timed: "<#38ef7d>✔ <white>Le portail <gradient:#38ef7d:#11998e>%portal%</gradient> est ouvert pour <#ffd200><bold>%time%</bold><white>."
+
+portal-closed: "<#ff4e50>✖ <white>Le portail <gradient:#ff4e50:#fc466b>%portal%</gradient> a été <#ff4e50>fermé</color>."
+portal-closed-reason: "<#ff4e50>✖ <white>Le portail <gradient:#ff4e50:#fc466b>%portal%</gradient> a été fermé.\n<#8a9bb2>Raison: <#ffe27a>%reason%"
+portal-already-closed: "<#ffe27a>⚠ Le portail <#ff4e50>%portal%<#ffe27a> est déjà fermé."
+
+portal-access-denied: "<#ff4e50>✖ Le portail <#ffe27a>%portal%<#ff4e50> est actuellement fermé."
+portal-access-denied-reason: "<#ff4e50>✖ Le portail <#ffe27a>%portal%<#ff4e50> est actuellement fermé.\n<#8a9bb2>Raison: <#ffe27a>%reason%"
+
+player-removed: "<#ffe27a>⚑ Vous avez été téléporté car le portail <#38ef7d>%portal%<#ffe27a> a été fermé."
+player-kicked: "<#ff4e50>Vous avez été expulsé car le portail <#ffe27a>%portal%<#ff4e50> a été fermé."
+
+timer-extended: "<#38ef7d>✔ <white>Minuterie de <gradient:#38ef7d:#11998e>%portal%</gradient> prolongée de <#ffd200><bold>%time%</bold><white>. Total restant: <#12c2e9><bold>%total%</bold><white>."
+timer-not-running: "<#ffe27a>⚠ Le portail <#12c2e9>%portal%<#ffe27a> n'a pas de minuterie active. Utilisez <#12c2e9>/nxgate open %portal% <durée><#ffe27a>."
+timer-portal-closed: "<#ff4e50>✖ Le portail <#ffe27a>%portal%<#ff4e50> est fermé. Ouvrez-le d'abord."
+
+bossbar-text: "%icon% <gradient:#c471ed:#12c2e9>%portal%</gradient> <#8a9bb2>▸ Ferme dans</color> <#ffd200><bold>%time%</bold>"
+
+status-header: "<gradient:#f7971e:#ffd200>⧫ Statut NxGate ⧫</gradient>"
+status-portal: "  <#d1d8e0>%portal% <#8a9bb2>→</color> %status%"
+status-open: "<#38ef7d><bold>● OUVERT</bold>"
+status-closed: "<#ff4e50><bold>● FERMÉ</bold>"
+status-timed: "<#38ef7d><bold>● OUVERT</bold> <#8a9bb2>(<#ffd200>%time%<#8a9bb2> restant)"
+status-footer: "<#2d3436>────────────────────────"
+
+next-header: "<gradient:#f7971e:#ffd200>⧫ Prochaine ouverture ⧫</gradient>"
+next-schedule: "  <#d1d8e0>%portal% <#8a9bb2>→</color> <#12c2e9>%day% <#c471ed>%time%"
+next-remaining: "  <#8a9bb2>Dans <#ffe27a>%remaining%"
+next-no-schedule: "<#ffe27a>⚠ Aucun horaire trouvé pour <#12c2e9>%portal%<#ffe27a>."
+next-currently-open: "<#38ef7d>✔ Le portail <#12c2e9>%portal%<#38ef7d> est actuellement ouvert."
+
+schedule-set: "<#38ef7d>✔ Horaire défini pour <#12c2e9>%portal%<#38ef7d>."
+schedule-removed: "<#ffe27a>Horaire supprimé pour <#12c2e9>%portal%<#ffe27a>."
+schedule-no-schedule: "<#ffe27a>⚠ Aucun horaire configuré pour <#12c2e9>%portal%<#ffe27a>."
+schedule-list-header: "<gradient:#f7971e:#ffd200>⧫ Horaires ⧫</gradient>"
+schedule-list-entry: "  <#12c2e9>%portal% <#8a9bb2>│ <#d1d8e0>%days% <#8a9bb2>│ <#ffe27a>%open%<#8a9bb2>→<#ffe27a>%close%"
+schedule-list-empty: "  <#8a9bb2>Aucun horaire configuré."
+
+broadcast-open: "<gradient:#38ef7d:#11998e>⬡ %portal%</gradient> <white>portail est maintenant <#38ef7d><bold>OUVERT</bold><white>!"
+broadcast-open-subtitle: "<#8a9bb2>Vous pouvez maintenant traverser."
+broadcast-close: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>portail est maintenant <#ff4e50><bold>FERMÉ</bold><white>."
+broadcast-close-reason: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>portail est maintenant <#ff4e50><bold>FERMÉ</bold><white>. <#8a9bb2>[<#ffe27a>%reason%<#8a9bb2>]"
+broadcast-close-subtitle: "<#8a9bb2>L'accès a été restreint."
+
+help-header: "<gradient:#f7971e:#ffd200>⧫ Aide NxGate ⧫</gradient>"
+help-open: "  <#12c2e9>/nxgate open <portail> [durée] <#8a9bb2>— Ouvrir un portail"
+help-close: "  <#12c2e9>/nxgate close <portail> [raison] <#8a9bb2>— Fermer un portail"
+help-status: "  <#12c2e9>/nxgate status [portail] <#8a9bb2>— Voir le statut"
+help-next: "  <#12c2e9>/nxgate next <portail> <#8a9bb2>— Prochaine ouverture"
+help-schedule-list: "  <#12c2e9>/nxgate schedule list <#8a9bb2>— Lister les horaires"
+help-schedule-set: "  <#12c2e9>/nxgate schedule set <portail> <jours> <ouv> <ferm> <#8a9bb2>— Définir horaire hebdomadaire"
+help-schedule-remove: "  <#12c2e9>/nxgate schedule remove <portail> <#8a9bb2>— Supprimer un horaire"
+help-timer-extend: "  <#12c2e9>/nxgate timer extend <portail> <durée> <#8a9bb2>— Prolonger le compte à rebours"
+help-reload: "  <#12c2e9>/nxgate reload <#8a9bb2>— Recharger la configuration"
+help-footer: "<#2d3436>────────────────────────"
+
+time-days: "%d jours"
+time-hours: "%d heures"
+time-minutes: "%d minutes"
+time-seconds: "%d secondes"
+time-day: "%d jour"
+time-hour: "%d heure"
+time-minute: "%d minute"
+time-second: "%d seconde"

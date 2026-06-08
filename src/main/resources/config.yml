@@ -1,0 +1,138 @@
+# NxGate Configuration
+# Plugin: NxGate | Version: 1.1.0 | Author: whoisnoirx
+# Docs: https://modrinth.com/plugin/nxgate
+
+# Language file to use. Available: en_US, vi_VN, zh_CN, de_DE, fr_FR, es_ES, pt_BR, ru_RU, ja_JP, ko_KR
+language: en_US
+
+# Server timezone for scheduling. Examples: UTC, Asia/Ho_Chi_Minh, America/New_York, Europe/Berlin
+timezone: UTC
+
+# Check for updates asynchronously on startup
+update-checker: true
+
+# Send anonymous usage stats to bStats (https://bstats.org)
+bstats: true
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Portal defaults — initial open/closed state on server start
+# ─────────────────────────────────────────────────────────────────────────────
+portals:
+  nether:
+    enabled: true
+    open: true
+  end:
+    enabled: true
+    open: true
+  gateway:
+    enabled: true
+    open: true
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Broadcast — announcements when a portal opens or closes
+# ─────────────────────────────────────────────────────────────────────────────
+broadcast:
+  enabled: true
+  # Which channels to use for broadcasts (mix and match)
+  chat: true
+  actionbar: true
+  title: true
+  subtitle: true
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  BossBar — countdown bar shown while a timed portal is open
+# ─────────────────────────────────────────────────────────────────────────────
+bossbar:
+  enabled: true
+  # Color: BLACK, BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+  color: PURPLE
+  # Style: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+  style: SEGMENTED_10
+  # Show the BossBar to new players who join while a countdown is active
+  show-on-join: true
+  # Per-portal color overrides (optional — comment out to use default)
+  # portal-colors:
+  #   nether: RED
+  #   end: PURPLE
+  #   gateway: BLUE
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Sounds — played server-wide on open/close events
+# ─────────────────────────────────────────────────────────────────────────────
+sounds:
+  enabled: true
+  open:
+    sound: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.4
+  close:
+    sound: ENTITY_WITHER_SPAWN
+    volume: 0.5
+    pitch: 1.2
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Player handling — what happens to players inside a dimension when it closes
+# ─────────────────────────────────────────────────────────────────────────────
+kick_players:
+  enabled: true
+
+  # KICK     — kick the player from the server
+  # TELEPORT — teleport the player to a safe location (recommended)
+  mode: TELEPORT
+
+  # Where to teleport the player. Options:
+  #   SPAWN       — player's bed/respawn anchor, then world spawn as fallback
+  #   WORLD_SPAWN — server main world spawn point
+  #   LOCATION    — custom fixed coordinates (set teleport_location below)
+  #   ENTRY       — return player to the exact location they entered from
+  #   HOME        — use Essentials /home (requires EssentialsX), falls back to home_fallback
+  teleport_to: ENTRY
+
+  # Fallback destination when HOME mode fails (Essentials missing or player has no home)
+  # Same values as teleport_to except HOME and ENTRY
+  home_fallback: WORLD_SPAWN
+
+  # Custom fixed location — used only when teleport_to: LOCATION
+  teleport_location:
+    world: world
+    x: 0.0
+    y: 64.0
+    z: 0.0
+
+  # Delay in ticks before teleporting (0 = instant, 20 = 1 second)
+  teleport_delay: 0
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Reasons — allow admins to supply a close reason with /nxgate close
+# ─────────────────────────────────────────────────────────────────────────────
+reasons:
+  enabled: true
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Schedules — automatic open/close on a weekly or one-time schedule
+# ─────────────────────────────────────────────────────────────────────────────
+schedules:
+  enabled: true
+
+  # Weekly recurring schedule example:
+  # end:
+  #   days:
+  #     - FRIDAY
+  #     - SATURDAY
+  #     - SUNDAY
+  #   open: "18:00"
+  #   close: "23:00"
+
+  # One-off date example:
+  # special_dates:
+  #   end:
+  #     - date: "2026-12-25"
+  #       open: "08:00"
+  #       close: "23:00"
+
+  # Named event example:
+  # events:
+  #   dragon_event:
+  #     portal: end
+  #     open: "2026-08-01 18:00"
+  #     close: "2026-08-01 23:00"

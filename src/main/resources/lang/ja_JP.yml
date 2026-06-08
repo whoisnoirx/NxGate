@@ -1,0 +1,77 @@
+# NxGate Language — 日本語 (ja_JP)
+# Author: whois_noirx
+
+prefix: "<gradient:#c471ed:#12c2e9><bold>NxGate</bold></gradient><#8a9bb2> » </color>"
+
+no-permission: "<#ff4757>このコマンドを実行する権限がありません。"
+player-only: "<#ff4757>このコマンドはプレイヤーのみ実行できます。"
+unknown-portal: "<#ff4757>不明なポータル: <#ffe27a>%portal%<#ff4757>。有効な値: nether, end, gateway。"
+unknown-command: "<#ff4757>不明なサブコマンドです。<#ffe27a>/nxgate help<#ff4757> を使用してください。"
+plugin-reloaded: "<#38ef7d>✔ NxGate の再読み込みが完了しました。"
+
+portal-opened: "<#38ef7d>✔ <white>ポータル <gradient:#38ef7d:#11998e>%portal%</gradient> が<#38ef7d>開放</color>されました。"
+portal-already-open: "<#ffe27a>⚠ ポータル <#38ef7d>%portal%<#ffe27a> はすでに開いています。"
+portal-open-timed: "<#38ef7d>✔ <white>ポータル <gradient:#38ef7d:#11998e>%portal%</gradient> が <#ffd200><bold>%time%</bold><white> 開放されました。"
+
+portal-closed: "<#ff4e50>✖ <white>ポータル <gradient:#ff4e50:#fc466b>%portal%</gradient> が<#ff4e50>閉鎖</color>されました。"
+portal-closed-reason: "<#ff4e50>✖ <white>ポータル <gradient:#ff4e50:#fc466b>%portal%</gradient> が閉鎖されました。\n<#8a9bb2>理由: <#ffe27a>%reason%"
+portal-already-closed: "<#ffe27a>⚠ ポータル <#ff4e50>%portal%<#ffe27a> はすでに閉じています。"
+
+portal-access-denied: "<#ff4e50>✖ ポータル <#ffe27a>%portal%<#ff4e50> は現在閉鎖中です。"
+portal-access-denied-reason: "<#ff4e50>✖ ポータル <#ffe27a>%portal%<#ff4e50> は現在閉鎖中です。\n<#8a9bb2>理由: <#ffe27a>%reason%"
+
+player-removed: "<#ffe27a>⚑ ポータル <#38ef7d>%portal%<#ffe27a> が閉鎖されたため、テレポートされました。"
+player-kicked: "<#ff4e50>ポータル <#ffe27a>%portal%<#ff4e50> が閉鎖されたため、退出させられました。"
+
+timer-extended: "<#38ef7d>✔ <white>ポータル <gradient:#38ef7d:#11998e>%portal%</gradient> のタイマーが <#ffd200><bold>%time%</bold><white> 延長されました。残り合計: <#12c2e9><bold>%total%</bold><white>。"
+timer-not-running: "<#ffe27a>⚠ ポータル <#12c2e9>%portal%<#ffe27a> にはアクティブなタイマーがありません。<#12c2e9>/nxgate open %portal% [時間]<#ffe27a> を使用してください。"
+timer-portal-closed: "<#ff4e50>✖ ポータル <#ffe27a>%portal%<#ff4e50> は閉じています。先に開放してください。"
+
+bossbar-text: "%icon% <gradient:#c471ed:#12c2e9>%portal%</gradient> <#8a9bb2>▸ あと</color> <#ffd200><bold>%time%</bold> <#8a9bb2>で閉鎖"
+
+status-header: "<gradient:#f7971e:#ffd200>⧫ NxGate ステータス ⧫</gradient>"
+status-portal: "  <#d1d8e0>%portal% <#8a9bb2>→</color> %status%"
+status-open: "<#38ef7d><bold>● 開放中</bold>"
+status-closed: "<#ff4e50><bold>● 閉鎖中</bold>"
+status-timed: "<#38ef7d><bold>● 開放中</bold> <#8a9bb2>(<#ffd200>%time%<#8a9bb2> 残り)"
+status-footer: "<#2d3436>────────────────────────"
+
+next-header: "<gradient:#f7971e:#ffd200>⧫ 次の開放 ⧫</gradient>"
+next-schedule: "  <#d1d8e0>%portal% <#8a9bb2>→</color> <#12c2e9>%day% <#c471ed>%time%"
+next-remaining: "  <#8a9bb2>あと <#ffe27a>%remaining%"
+next-no-schedule: "<#ffe27a>⚠ ポータル <#12c2e9>%portal%<#ffe27a> のスケジュールが見つかりません。"
+next-currently-open: "<#38ef7d>✔ ポータル <#12c2e9>%portal%<#38ef7d> は現在開放中です。"
+
+schedule-set: "<#38ef7d>✔ ポータル <#12c2e9>%portal%<#38ef7d> のスケジュールを設定しました。"
+schedule-removed: "<#ffe27a>ポータル <#12c2e9>%portal%<#ffe27a> のスケジュールを削除しました。"
+schedule-no-schedule: "<#ffe27a>⚠ ポータル <#12c2e9>%portal%<#ffe27a> のスケジュールが設定されていません。"
+schedule-list-header: "<gradient:#f7971e:#ffd200>⧫ スケジュール ⧫</gradient>"
+schedule-list-entry: "  <#12c2e9>%portal% <#8a9bb2>│ <#d1d8e0>%days% <#8a9bb2>│ <#ffe27a>%open%<#8a9bb2>→<#ffe27a>%close%"
+schedule-list-empty: "  <#8a9bb2>スケジュールが設定されていません。"
+
+broadcast-open: "<gradient:#38ef7d:#11998e>⬡ %portal%</gradient> <white>ポータルが<#38ef7d><bold>開放</bold><white>されました！"
+broadcast-open-subtitle: "<#8a9bb2>今すぐ通過できます。"
+broadcast-close: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>ポータルが<#ff4e50><bold>閉鎖</bold><white>されました。"
+broadcast-close-reason: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>ポータルが<#ff4e50><bold>閉鎖</bold><white>されました。<#8a9bb2>[<#ffe27a>%reason%<#8a9bb2>]"
+broadcast-close-subtitle: "<#8a9bb2>アクセスが制限されました。"
+
+help-header: "<gradient:#f7971e:#ffd200>⧫ NxGate ヘルプ ⧫</gradient>"
+help-open: "  <#12c2e9>/nxgate open <portal> [時間] <#8a9bb2>— ポータルを開放"
+help-close: "  <#12c2e9>/nxgate close <portal> [理由] <#8a9bb2>— ポータルを閉鎖"
+help-status: "  <#12c2e9>/nxgate status [portal] <#8a9bb2>— ステータスを確認"
+help-next: "  <#12c2e9>/nxgate next <portal> <#8a9bb2>— 次の開放を確認"
+help-schedule-list: "  <#12c2e9>/nxgate schedule list <#8a9bb2>— スケジュール一覧"
+help-schedule-set: "  <#12c2e9>/nxgate schedule set <portal> <日> <開> <閉> <#8a9bb2>— 毎週スケジュール設定"
+help-schedule-remove: "  <#12c2e9>/nxgate schedule remove <portal> <#8a9bb2>— スケジュール削除"
+help-timer-extend: "  <#12c2e9>/nxgate timer extend <portal> [時間] <#8a9bb2>— カウントダウンを延長"
+help-reload: "  <#12c2e9>/nxgate reload <#8a9bb2>— 設定を再読み込み"
+help-footer: "<#2d3436>────────────────────────"
+
+time-days: "%d日"
+time-hours: "%d時間"
+time-minutes: "%d分"
+time-seconds: "%d秒"
+time-day: "%d日"
+time-hour: "%d時間"
+time-minute: "%d分"
+time-second: "%d秒"

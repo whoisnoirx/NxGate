@@ -1,0 +1,77 @@
+# NxGate Language — 简体中文 (zh_CN)
+# Author: whois_noirx
+
+prefix: "<gradient:#c471ed:#12c2e9><bold>NxGate</bold></gradient><#8a9bb2> » </color>"
+
+no-permission: "<#ff4757>您没有权限执行此命令。"
+player-only: "<#ff4757>此命令只能由玩家执行。"
+unknown-portal: "<#ff4757>未知传送门: <#ffe27a>%portal%<#ff4757>。有效值: nether, end, gateway。"
+unknown-command: "<#ff4757>未知子命令。请使用 <#ffe27a>/nxgate help<#ff4757>。"
+plugin-reloaded: "<#38ef7d>✔ NxGate 已成功重载。"
+
+portal-opened: "<#38ef7d>✔ <white><gradient:#38ef7d:#11998e>%portal%</gradient> 传送门已<#38ef7d>开启</color>。"
+portal-already-open: "<#ffe27a>⚠ <#38ef7d>%portal%<#ffe27a> 传送门已是开启状态。"
+portal-open-timed: "<#38ef7d>✔ <white><gradient:#38ef7d:#11998e>%portal%</gradient> 传送门将在 <#ffd200><bold>%time%</bold><white> 后关闭。"
+
+portal-closed: "<#ff4e50>✖ <white><gradient:#ff4e50:#fc466b>%portal%</gradient> 传送门已<#ff4e50>关闭</color>。"
+portal-closed-reason: "<#ff4e50>✖ <white><gradient:#ff4e50:#fc466b>%portal%</gradient> 传送门已关闭。\n<#8a9bb2>原因: <#ffe27a>%reason%"
+portal-already-closed: "<#ffe27a>⚠ <#ff4e50>%portal%<#ffe27a> 传送门已是关闭状态。"
+
+portal-access-denied: "<#ff4e50>✖ <#ffe27a>%portal%<#ff4e50> 传送门目前已关闭。"
+portal-access-denied-reason: "<#ff4e50>✖ <#ffe27a>%portal%<#ff4e50> 传送门目前已关闭。\n<#8a9bb2>原因: <#ffe27a>%reason%"
+
+player-removed: "<#ffe27a>⚑ 您被传送出来，因为 <#38ef7d>%portal%<#ffe27a> 传送门已关闭。"
+player-kicked: "<#ff4e50>您已被踢出，因为 <#ffe27a>%portal%<#ff4e50> 传送门已关闭。"
+
+timer-extended: "<#38ef7d>✔ <white><gradient:#38ef7d:#11998e>%portal%</gradient> 的倒计时延长了 <#ffd200><bold>%time%</bold><white>。剩余总时间: <#12c2e9><bold>%total%</bold><white>。"
+timer-not-running: "<#ffe27a>⚠ 传送门 <#12c2e9>%portal%<#ffe27a> 没有活动倒计时。请使用 <#12c2e9>/nxgate open %portal% <时间><#ffe27a>。"
+timer-portal-closed: "<#ff4e50>✖ 传送门 <#ffe27a>%portal%<#ff4e50> 已关闭，请先开启。"
+
+bossbar-text: "%icon% <gradient:#c471ed:#12c2e9>%portal%</gradient> <#8a9bb2>▸ 将在</color> <#ffd200><bold>%time%</bold> <#8a9bb2>后关闭"
+
+status-header: "<gradient:#f7971e:#ffd200>⧫ NxGate 状态 ⧫</gradient>"
+status-portal: "  <#d1d8e0>%portal% <#8a9bb2>→</color> %status%"
+status-open: "<#38ef7d><bold>● 开启</bold>"
+status-closed: "<#ff4e50><bold>● 关闭</bold>"
+status-timed: "<#38ef7d><bold>● 开启</bold> <#8a9bb2>(<#ffd200>%time%<#8a9bb2> 后关闭)"
+status-footer: "<#2d3436>────────────────────────"
+
+next-header: "<gradient:#f7971e:#ffd200>⧫ 下次开启 ⧫</gradient>"
+next-schedule: "  <#d1d8e0>%portal% <#8a9bb2>→</color> <#12c2e9>%day% <#c471ed>%time%"
+next-remaining: "  <#8a9bb2>距离开启还有 <#ffe27a>%remaining%"
+next-no-schedule: "<#ffe27a>⚠ 未找到 <#12c2e9>%portal%<#ffe27a> 的计划表。"
+next-currently-open: "<#38ef7d>✔ <#12c2e9>%portal%<#38ef7d> 传送门目前已开启。"
+
+schedule-set: "<#38ef7d>✔ 已为 <#12c2e9>%portal%<#38ef7d> 设置计划表。"
+schedule-removed: "<#ffe27a>已移除 <#12c2e9>%portal%<#ffe27a> 的计划表。"
+schedule-no-schedule: "<#ffe27a>⚠ <#12c2e9>%portal%<#ffe27a> 没有配置计划表。"
+schedule-list-header: "<gradient:#f7971e:#ffd200>⧫ 计划表 ⧫</gradient>"
+schedule-list-entry: "  <#12c2e9>%portal% <#8a9bb2>│ <#d1d8e0>%days% <#8a9bb2>│ <#ffe27a>%open%<#8a9bb2>→<#ffe27a>%close%"
+schedule-list-empty: "  <#8a9bb2>暂无计划表。"
+
+broadcast-open: "<gradient:#38ef7d:#11998e>⬡ %portal%</gradient> <white>传送门已<#38ef7d><bold>开启</bold><white>！"
+broadcast-open-subtitle: "<#8a9bb2>您现在可以通过传送门了。"
+broadcast-close: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>传送门已<#ff4e50><bold>关闭</bold><white>。"
+broadcast-close-reason: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>传送门已<#ff4e50><bold>关闭</bold><white>。<#8a9bb2>[<#ffe27a>%reason%<#8a9bb2>]"
+broadcast-close-subtitle: "<#8a9bb2>访问已被限制。"
+
+help-header: "<gradient:#f7971e:#ffd200>⧫ NxGate 帮助 ⧫</gradient>"
+help-open: "  <#12c2e9>/nxgate open <portal> [时间] <#8a9bb2>— 开启传送门"
+help-close: "  <#12c2e9>/nxgate close <portal> [原因] <#8a9bb2>— 关闭传送门"
+help-status: "  <#12c2e9>/nxgate status [portal] <#8a9bb2>— 查看状态"
+help-next: "  <#12c2e9>/nxgate next <portal> <#8a9bb2>— 下次开启时间"
+help-schedule-list: "  <#12c2e9>/nxgate schedule list <#8a9bb2>— 列出计划表"
+help-schedule-set: "  <#12c2e9>/nxgate schedule set <portal> <天> <开> <关> <#8a9bb2>— 设置每周计划"
+help-schedule-remove: "  <#12c2e9>/nxgate schedule remove <portal> <#8a9bb2>— 移除计划表"
+help-timer-extend: "  <#12c2e9>/nxgate timer extend <portal> <时间> <#8a9bb2>— 延长倒计时"
+help-reload: "  <#12c2e9>/nxgate reload <#8a9bb2>— 重载配置"
+help-footer: "<#2d3436>────────────────────────"
+
+time-days: "%d天"
+time-hours: "%d小时"
+time-minutes: "%d分钟"
+time-seconds: "%d秒"
+time-day: "%d天"
+time-hour: "%d小时"
+time-minute: "%d分钟"
+time-second: "%d秒"

@@ -1,0 +1,77 @@
+# NxGate Language — Tiếng Việt (vi_VN)
+# Author: whois_noirx
+
+prefix: "<gradient:#c471ed:#12c2e9><bold>NxGate</bold></gradient><#8a9bb2> » </color>"
+
+no-permission: "<#ff4757>Bạn không có quyền thực hiện lệnh này."
+player-only: "<#ff4757>Lệnh này chỉ dành cho người chơi."
+unknown-portal: "<#ff4757>Portal không hợp lệ: <#ffe27a>%portal%<#ff4757>. Các portal hợp lệ: nether, end, gateway."
+unknown-command: "<#ff4757>Lệnh phụ không hợp lệ. Dùng <#ffe27a>/nxgate help<#ff4757>."
+plugin-reloaded: "<#38ef7d>✔ NxGate đã tải lại thành công."
+
+portal-opened: "<#38ef7d>✔ <white>Portal <gradient:#38ef7d:#11998e>%portal%</gradient> đã được <#38ef7d>mở</color>."
+portal-already-open: "<#ffe27a>⚠ Portal <#38ef7d>%portal%<#ffe27a> đã đang mở."
+portal-open-timed: "<#38ef7d>✔ <white>Portal <gradient:#38ef7d:#11998e>%portal%</gradient> được mở trong <#ffd200><bold>%time%</bold><white>."
+
+portal-closed: "<#ff4e50>✖ <white>Portal <gradient:#ff4e50:#fc466b>%portal%</gradient> đã bị <#ff4e50>đóng</color>."
+portal-closed-reason: "<#ff4e50>✖ <white>Portal <gradient:#ff4e50:#fc466b>%portal%</gradient> đã bị đóng.\n<#8a9bb2>Lý do: <#ffe27a>%reason%"
+portal-already-closed: "<#ffe27a>⚠ Portal <#ff4e50>%portal%<#ffe27a> đã đang đóng."
+
+portal-access-denied: "<#ff4e50>✖ Portal <#ffe27a>%portal%<#ff4e50> hiện đang đóng."
+portal-access-denied-reason: "<#ff4e50>✖ Portal <#ffe27a>%portal%<#ff4e50> hiện đang đóng.\n<#8a9bb2>Lý do: <#ffe27a>%reason%"
+
+player-removed: "<#ffe27a>⚑ Bạn bị di chuyển vì portal <#38ef7d>%portal%<#ffe27a> đã đóng."
+player-kicked: "<#ff4e50>Bạn bị kick vì portal <#ffe27a>%portal%<#ff4e50> đã đóng."
+
+timer-extended: "<#38ef7d>✔ <white>Bộ đếm ngược của <gradient:#38ef7d:#11998e>%portal%</gradient> được kéo dài thêm <#ffd200><bold>%time%</bold><white>. Tổng còn lại: <#12c2e9><bold>%total%</bold><white>."
+timer-not-running: "<#ffe27a>⚠ Portal <#12c2e9>%portal%<#ffe27a> không có bộ đếm ngược. Dùng <#12c2e9>/nxgate open %portal% <thời gian><#ffe27a>."
+timer-portal-closed: "<#ff4e50>✖ Portal <#ffe27a>%portal%<#ff4e50> đang đóng. Hãy mở nó trước."
+
+bossbar-text: "%icon% <gradient:#c471ed:#12c2e9>%portal%</gradient> <#8a9bb2>▸ Đóng sau</color> <#ffd200><bold>%time%</bold>"
+
+status-header: "<gradient:#f7971e:#ffd200>⧫ Trạng thái NxGate ⧫</gradient>"
+status-portal: "  <#d1d8e0>%portal% <#8a9bb2>→</color> %status%"
+status-open: "<#38ef7d><bold>● MỞ</bold>"
+status-closed: "<#ff4e50><bold>● ĐÓNG</bold>"
+status-timed: "<#38ef7d><bold>● MỞ</bold> <#8a9bb2>(<#ffd200>%time%<#8a9bb2> còn lại)"
+status-footer: "<#2d3436>────────────────────────"
+
+next-header: "<gradient:#f7971e:#ffd200>⧫ Lần mở tiếp theo ⧫</gradient>"
+next-schedule: "  <#d1d8e0>%portal% <#8a9bb2>→</color> <#12c2e9>%day% <#c471ed>%time%"
+next-remaining: "  <#8a9bb2>Còn <#ffe27a>%remaining%"
+next-no-schedule: "<#ffe27a>⚠ Không có lịch cho portal <#12c2e9>%portal%<#ffe27a>."
+next-currently-open: "<#38ef7d>✔ Portal <#12c2e9>%portal%<#38ef7d> đang mở."
+
+schedule-set: "<#38ef7d>✔ Đã đặt lịch cho portal <#12c2e9>%portal%<#38ef7d>."
+schedule-removed: "<#ffe27a>Đã xóa lịch cho portal <#12c2e9>%portal%<#ffe27a>."
+schedule-no-schedule: "<#ffe27a>⚠ Chưa có lịch nào cho portal <#12c2e9>%portal%<#ffe27a>."
+schedule-list-header: "<gradient:#f7971e:#ffd200>⧫ Lịch mở portal ⧫</gradient>"
+schedule-list-entry: "  <#12c2e9>%portal% <#8a9bb2>│ <#d1d8e0>%days% <#8a9bb2>│ <#ffe27a>%open%<#8a9bb2>→<#ffe27a>%close%"
+schedule-list-empty: "  <#8a9bb2>Chưa có lịch nào."
+
+broadcast-open: "<gradient:#38ef7d:#11998e>⬡ %portal%</gradient> <white>đã <#38ef7d><bold>MỞ</bold><white>!"
+broadcast-open-subtitle: "<#8a9bb2>Bạn có thể di chuyển qua portal."
+broadcast-close: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>đã <#ff4e50><bold>ĐÓNG</bold><white>."
+broadcast-close-reason: "<gradient:#ff4e50:#fc466b>⬡ %portal%</gradient> <white>đã <#ff4e50><bold>ĐÓNG</bold><white>. <#8a9bb2>[<#ffe27a>%reason%<#8a9bb2>]"
+broadcast-close-subtitle: "<#8a9bb2>Truy cập đã bị hạn chế."
+
+help-header: "<gradient:#f7971e:#ffd200>⧫ Trợ giúp NxGate ⧫</gradient>"
+help-open: "  <#12c2e9>/nxgate open <portal> [thời gian] <#8a9bb2>— Mở portal"
+help-close: "  <#12c2e9>/nxgate close <portal> [lý do] <#8a9bb2>— Đóng portal"
+help-status: "  <#12c2e9>/nxgate status [portal] <#8a9bb2>— Xem trạng thái"
+help-next: "  <#12c2e9>/nxgate next <portal> <#8a9bb2>— Lần mở tiếp theo"
+help-schedule-list: "  <#12c2e9>/nxgate schedule list <#8a9bb2>— Danh sách lịch"
+help-schedule-set: "  <#12c2e9>/nxgate schedule set <portal> <ngày> <mở> <đóng> <#8a9bb2>— Đặt lịch hàng tuần"
+help-schedule-remove: "  <#12c2e9>/nxgate schedule remove <portal> <#8a9bb2>— Xóa lịch"
+help-timer-extend: "  <#12c2e9>/nxgate timer extend <portal> <thời gian> <#8a9bb2>— Kéo dài bộ đếm ngược"
+help-reload: "  <#12c2e9>/nxgate reload <#8a9bb2>— Tải lại cấu hình"
+help-footer: "<#2d3436>────────────────────────"
+
+time-days: "%d ngày"
+time-hours: "%d giờ"
+time-minutes: "%d phút"
+time-seconds: "%d giây"
+time-day: "%d ngày"
+time-hour: "%d giờ"
+time-minute: "%d phút"
+time-second: "%d giây"
